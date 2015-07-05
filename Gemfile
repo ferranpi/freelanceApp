@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'sass', '3.4.15'
+# gem 'sass', '3.4.15'
 gem 'bower-rails'
 gem 'foreman'
 
