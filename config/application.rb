@@ -25,6 +25,6 @@ module FreelanceApp
 
     # Add bower_components to asset pipeline
     config.assets.paths << Rails.root.join("vendor","assets","bower_components")
-    #config.assets.paths << Rails.root.join("vendor","assets","bower_components","angular-material")
+    config.assets.paths << Rails.root.join("vendor","assets","bower_components","angular-material","modules")
   end
 end
