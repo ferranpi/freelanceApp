@@ -7,23 +7,24 @@
     .module('freelanceApp', [
       'ngAnimate',
       'ngAria',
+      'templates',
       'ngRoute',
       'ngResource',
       'ngMaterial'
-    ]);
-    // .config(function ($routeProvider, $mdThemingProvider, $mdIconProvider) {
-    //   $routeProvider
-    //     .when('/', {
-    //       templateUrl: 'scripts/dashboard/views/dashboard.html'
-    //       //controller: 'MainController'
-    //     })
-    //     .when('/contactos', {
-    //       templateUrl: 'scripts/contactos/views/list.html'
-    //       //controller: 'MainController'
-    //     })
-    //     .otherwise({
-    //       redirectTo: '/'
-    //     });
+    ])
+    .config(function ($routeProvider, $mdThemingProvider, $mdIconProvider) {
+      $routeProvider
+        .when('/', {
+          templateUrl: 'index.html'
+          //controller: 'MainController'
+        })
+        .when('/contactos', {
+          templateUrl: 'scripts/contactos/views/list.html'
+          //controller: 'MainController'
+        })
+        .otherwise({
+          redirectTo: '/'
+        });
     //   //$mdIconProvider
     //   //  .defaultIconSet("./assets/svg/avatars.svg", 128)
     //   //  .icon("share", "./assets/svg/share.svg", 24)
@@ -34,5 +35,5 @@
     //   $mdThemingProvider.theme('default')
     //     .primaryPalette('blue')
     //     .accentPalette('pink');
-    // });
+    });
 })();

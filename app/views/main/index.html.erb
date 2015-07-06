@@ -1,0 +1,21 @@
+<div ng-app="freelanceApp" layout="row" ng-cloak>
+  <div layout="column" layout-fill>
+    <md-toolbar class="md-whiteframe-z2">
+      <div class="md-toolbar-tools">
+        <span>FreelanceApp</span>
+        <!-- fill up the space between left and right area -->
+        <span flex></span>
+      </div>
+    </md-toolbar>
+
+    <div layout="row" flex>
+      <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+        <md-content flex role="navigation">
+        </md-content>
+      </md-sidenav>
+      <div layout="column" tabindex="-1" role="main" flex>
+        <md-content ng-view md-scroll-y flex layout-padding></md-content>
+      </div>
+    </div>
+  </div>
+</div>
