@@ -24,7 +24,6 @@ module FreelanceApp
     config.active_record.raise_in_transactional_callbacks = true
 
     # Add bower_components to asset pipeline
-    config.assets.paths << Rails.root.join("vendor","assets","bower_components")
-    config.assets.paths << Rails.root.join("vendor","assets","bower_components","angular-material","modules")
+    #config.assets.paths << Rails.root.join("vendor","assets","bower_components")
   end
 end
