@@ -35,7 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # AngularJS support
 gem 'bower-rails'
 gem 'angular-rails-templates'
-gem 'sprockets', '< 3'
+gem 'sprockets', '2.12.3'
 
 
 gem 'foreman'
