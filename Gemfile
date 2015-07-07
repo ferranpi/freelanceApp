@@ -33,7 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 # Sass support
-gem 'sass', '3.2.19'
+#gem 'sass', '3.2.19'
 
 # AngularJS support
 gem 'bower-rails'
