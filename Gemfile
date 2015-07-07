@@ -50,6 +50,8 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
+  gem 'better_errors'
+
   gem 'rspec-rails', '~> 3.3.2'
   gem 'factory_girl_rails', '~> 4.5.0'
   gem 'capybara'
@@ -58,7 +60,8 @@ group :development, :test do
 
 end
 
-group :production, :staging do
+group :production do
+  gem 'sprockets_better_errors'
   gem 'rails_12factor'
   gem 'rails_stdout_logging'
   gem 'rails_serve_static_assets'
