@@ -62,9 +62,10 @@ group :development, :test do
   gem 'selenium-webdriver'
 
 end
+gem 'sprockets_better_errors'
 
 group :production do
-  gem 'sprockets_better_errors'
+
   gem 'rails_12factor'
   gem 'rails_stdout_logging'
   gem 'rails_serve_static_assets'
