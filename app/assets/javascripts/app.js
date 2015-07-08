@@ -12,14 +12,12 @@
       'ngResource',
       'ngMaterial'
     ])
-    .config(function ($routeProvider, $mdThemingProvider, $mdIconProvider) {
+    //.config(function ($routeProvider, $mdThemingProvider, $mdIconProvider) {
+    .config(function($routeProvider){
+
       $routeProvider
         .when('/', {
           templateUrl: 'index.html'
-          //controller: 'MainController'
-        })
-        .when('/contactos', {
-          templateUrl: 'scripts/contactos/views/list.html'
           //controller: 'MainController'
         })
         .otherwise({
