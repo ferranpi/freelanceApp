@@ -14,7 +14,7 @@
     function($routeProvider) {
       $routeProvider.
         when('/', {
-          templateUrl: 'index.html'
+          templateUrl: 'home/index.html'
         }).
         otherwise({
           redirectTo: '/'
