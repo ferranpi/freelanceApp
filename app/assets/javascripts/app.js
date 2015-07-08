@@ -1,6 +1,24 @@
 
 'use strinc';
-angular.module('freelanceApp',[]);
+var freelanceApp = angular.module('freelanceApp', ['templates', 'ngRoute']);
+
+freelanceApp.config(['$routeProvider',
+  function($routeProvider) {
+    $routeProvider.
+      when('/', {
+        templateUrl: 'index.html'
+      }).
+      otherwise({
+        redirectTo: '/'
+      });
+  }]);
+
+// .config('$routeProvider', function($routeProvider){
+//   $routeProvider
+//     .when('/', {
+//       templateUrl: 'index.html'
+//     });
+// });
 // (function () {
 //   'use strict';
 //     /**
