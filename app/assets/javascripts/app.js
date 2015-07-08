@@ -1,17 +1,28 @@
+(function () {
 
-'use strinc';
-var freelanceApp = angular.module('freelanceApp', ['templates', 'ngRoute']);
+  'use strinc';
+  var freelanceApp = angular.module('freelanceApp', [
+    'ngAnimate',
+    'ngAria',
+    'templates',
+    'ngRoute',
+    'ngResource',
+    'ngMaterial'
+  ]);
 
-freelanceApp.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-      when('/', {
-        templateUrl: 'index.html'
-      }).
-      otherwise({
-        redirectTo: '/'
-      });
-  }]);
+  freelanceApp.config(['$routeProvider',
+    function($routeProvider) {
+      $routeProvider.
+        when('/', {
+          templateUrl: 'index.html'
+        }).
+        otherwise({
+          redirectTo: '/'
+        });
+    }]);
+})();
+
+
 
 // .config('$routeProvider', function($routeProvider){
 //   $routeProvider
