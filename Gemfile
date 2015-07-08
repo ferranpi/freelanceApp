@@ -33,13 +33,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 # Sass support
-#gem 'sass', '3.2.19'
 gem 'sass'
 # AngularJS support
 gem 'bower-rails'
 gem 'angular-rails-templates'
-#gem 'sprockets', '2.12.3'
-
 
 gem 'foreman'
 
