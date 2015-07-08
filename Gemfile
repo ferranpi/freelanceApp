@@ -62,7 +62,6 @@ group :development, :test do
   gem 'selenium-webdriver'
 
 end
-gem 'sprockets_better_errors'
 
 group :production do
 
