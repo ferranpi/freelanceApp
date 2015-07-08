@@ -1,9 +1,13 @@
-<div ng-app="freelanceApp" layout="row" ng-cloak>
+<div ng-app="freelanceApp">
+  <h1 ng-if="name">Hello, {{name}}</h1>
+  <input type="text" placeholder="Enter your name" autofocus ng-model="name">
+</div>
+
+<!-- <div ng-app="freelanceApp" layout="row" ng-cloak>
   <div layout="column" layout-fill>
     <md-toolbar class="md-whiteframe-z2">
       <div class="md-toolbar-tools">
         <span>FreelanceApp</span>
-        <!-- fill up the space between left and right area -->
         <span flex></span>
       </div>
     </md-toolbar>
@@ -19,3 +23,4 @@
     </div>
   </div>
 </div>
+ -->
