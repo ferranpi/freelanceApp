@@ -1,6 +1,7 @@
 (function () {
 
   'use strinc';
+
   var freelanceApp = angular.module('freelanceApp', [
     'ngAnimate',
     'ngAria',
